@@ -24,8 +24,8 @@ $(document).ready(function () {
     });
 
     // Move to slide # - first number is sectin, second is slide - zero indexed for slides
-    $('#goToSlide1').click(function () {
-        fullpage_api.moveTo(1, 0);
+    $('#goToResults').click(function () {
+        fullpage_api.moveTo(2, 1);
     });
 
 

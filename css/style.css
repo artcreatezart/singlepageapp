@@ -23,7 +23,7 @@ nav ul {
 }
 nav ul li {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 100px;
 }
 nav ul li a {
@@ -32,6 +32,7 @@ nav ul li a {
   font-size: 1.5em;
   letter-spacing: 5px;
   transition: ease 0.1s;
+  position: relative;
 }
 nav ul li a:hover {
   color: #FFFF00;
@@ -108,4 +109,20 @@ nav ul li a:hover {
   background-color: #100A77;
   transition: ease 0.1s;
   color: #FFFF00;
+}
+
+.section-pokedex {
+  width: 100%;
+  height: 100%;
+}
+.section-pokedex .slide-filters {
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+}
+.section-pokedex .slide-filters h2 {
+  color: #000;
+}
+.section-pokedex .slide-results {
+  background-color: blue;
 }/*# sourceMappingURL=style.css.map */

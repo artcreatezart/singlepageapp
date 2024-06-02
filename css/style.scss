@@ -18,12 +18,15 @@ nav {
     min-width: 100%;
     padding: 25px;
     color: white;
+
     ul {
         list-style: none;
+
         li {
             display: flex;
-            justify-content: end;
+            justify-content: flex-end;
             gap: 100px;
+
             a {
                 text-decoration: none;
                 color: white;
@@ -31,8 +34,9 @@ nav {
                 letter-spacing: 5px;
                 transition: ease 0.1s;
                 position: relative;
-                
+
             }
+
             a:hover {
                 color: #FFFF00;
                 transition: ease 0.1s;
@@ -111,8 +115,9 @@ nav {
                 border: 6px #100A77 solid;
                 color: white;
                 transition: ease 0.1s;
-                
+
             }
+
             button:hover {
                 background-color: #100A77;
                 transition: ease 0.1s;
@@ -121,4 +126,23 @@ nav {
         }
     }
 
+}
+
+.section-pokedex {
+    width: 100%;
+    height: 100%;
+    .slide-filters {
+        width: 100%;
+    height: 100%;
+
+        background-color: pink;
+
+        h2 {
+            color: #000;
+        }
+    }
+
+    .slide-results {
+        background-color: blue;
+    }
 }
