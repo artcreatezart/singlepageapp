@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.css"
         integrity="sha512-AIwt5sjXSKDo4t0KSQ/eAuy43kQMc1hYtIKLxaFrHd26nQFzMo1FJdBIickVyGXnhm2xB2OOYBqMBgu3dBU4KA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./img/pokeball.webp" type="image/x-icon" />
@@ -20,7 +22,7 @@
             <li>
                 <a href="#home">Home</a>
                 <a href="#pokedex">Pokedex</a>
-                <a href="#regions">Regions</a>
+                <a href="#region">Regions</a>
             </li>
         </ul>
 
@@ -48,15 +50,255 @@
                 <div class="type-filter-btn">
                     <label for="type">Pokemon Type</label>
                     <select name="type" id="type">
-                        <option value=""></option>
+                        <option value="Normal">Normal</option>
+                        <option value="Fire">Fire</option>
+                        <option value="Water">Water</option>
+                        <option value="Eletric">Eletric</option>
+                        <option value="Grass">Grass</option>
+                        <option value="Ice">Ice</option>
+                        <option value="Fighting">Fighting</option>
+                        <option value="Poison">Poison</option>
+                        <option value="Ground">Ground</option>
+                        <option value="Flying">Flying</option>
+                        <option value="Psychic">Psychic</option>
+                        <option value="Bug">Bug</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Ghost">Ghost</option>
+                        <option value="Dragon">Dragon</option>
+                        <option value="Dark">Dark</option>
+                        <option value="Steel">Steel</option>
+                        <option value="Fairy">Fairy</option>
                     </select>
-                </form>
+                </div>
+                <div class="generation-filter-btn">
+                    <label for="generation">Pokemon Generation</label>
+                    <select name="generation" id="generation">
+                        <option value="Generation 1">Generation 1</option>
+                        <option value="Generation 2">Generation 2</option>
+                        <option value="Generation 3">Generation 3</option>
+                        <option value="Generation 4">Generation 4</option>
+                        <option value="Generation 5">Generation 5</option>
+                        <option value="Generation 6">Generation 6</option>
+                        <option value="Generation 7">Generation 7</option>
+                        <option value="Generation 8">Generation 8</option>
+                        <option value="Generation 9">Generation 9</option>
+                    </select>
+                </div>
             </div>
-            <div class="slide slide-results" id="">
-                <div class="results"></div>
+            <div class="slide slide-results">
+                <div id="results"></div>
             </div>
         </div>
-        <div class="section" id="region">Regions</div>
+        <div class="section" id="region">
+            <h1>Regions</h1>
+            <div class="pokemon-regions">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="${region.image}" alt="${region.name} image 1" class="region-image"
+                                value=${region.id}>
+                            <div class="swiper-slide-details">
+                                <h3>Kanto</h3>
+                                <h5>Games you can find in kanto</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illum neque ipsa
+                                    cupiditate voluptas libero officiis? Error tenetur enim recusandae eos facere,
+                                    deleniti,
+                                    ipsa nemo amet magnam, voluptatibus hic velit.
+                                    Nisi quo voluptatem voluptate repellendus tenetur, quas architecto impedit pariatur
+                                    provident inventore deleniti, ducimus, sequi maxime? Voluptatem alias fuga explicabo
+                                    voluptate nostrum porro magni similique consectetur obcaecati culpa? Ullam,
+                                    molestiae!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="${region.image}" alt="${region.name} image 1" class="region-image"
+                                value=${region.id}>
+                            <div class="swiper-slide-details">
+                                <h3>Kanto</h3>
+                                <h5>Games you can find in kanto</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illum neque ipsa
+                                    cupiditate voluptas libero officiis? Error tenetur enim recusandae eos facere,
+                                    deleniti,
+                                    ipsa nemo amet magnam, voluptatibus hic velit.
+                                    Nisi quo voluptatem voluptate repellendus tenetur, quas architecto impedit pariatur
+                                    provident inventore deleniti, ducimus, sequi maxime? Voluptatem alias fuga explicabo
+                                    voluptate nostrum porro magni similique consectetur obcaecati culpa? Ullam,
+                                    molestiae!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="${region.image}" alt="${region.name} image 1" class="region-image"
+                                value=${region.id}>
+                            <div class="swiper-slide-details">
+                                <h3>Kanto</h3>
+                                <h5>Games you can find in kanto</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illum neque ipsa
+                                    cupiditate voluptas libero officiis? Error tenetur enim recusandae eos facere,
+                                    deleniti,
+                                    ipsa nemo amet magnam, voluptatibus hic velit.
+                                    Nisi quo voluptatem voluptate repellendus tenetur, quas architecto impedit pariatur
+                                    provident inventore deleniti, ducimus, sequi maxime? Voluptatem alias fuga explicabo
+                                    voluptate nostrum porro magni similique consectetur obcaecati culpa? Ullam,
+                                    molestiae!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="${region.image}" alt="${region.name} image 1" class="region-image"
+                                value=${region.id}>
+                            <div class="swiper-slide-details">
+                                <h3>Kanto</h3>
+                                <h5>Games you can find in kanto</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illum neque ipsa
+                                    cupiditate voluptas libero officiis? Error tenetur enim recusandae eos facere,
+                                    deleniti,
+                                    ipsa nemo amet magnam, voluptatibus hic velit.
+                                    Nisi quo voluptatem voluptate repellendus tenetur, quas architecto impedit pariatur
+                                    provident inventore deleniti, ducimus, sequi maxime? Voluptatem alias fuga explicabo
+                                    voluptate nostrum porro magni similique consectetur obcaecati culpa? Ullam,
+                                    molestiae!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="${region.image}" alt="${region.name} image 1" class="region-image"
+                                value=${region.id}>
+                            <div class="swiper-slide-details">
+                                <h3>Kanto</h3>
+                                <h5>Games you can find in kanto</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illum neque ipsa
+                                    cupiditate voluptas libero officiis? Error tenetur enim recusandae eos facere,
+                                    deleniti,
+                                    ipsa nemo amet magnam, voluptatibus hic velit.
+                                    Nisi quo voluptatem voluptate repellendus tenetur, quas architecto impedit pariatur
+                                    provident inventore deleniti, ducimus, sequi maxime? Voluptatem alias fuga explicabo
+                                    voluptate nostrum porro magni similique consectetur obcaecati culpa? Ullam,
+                                    molestiae!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="${region.image}" alt="${region.name} image 1" class="region-image"
+                                value=${region.id}>
+                            <div class="swiper-slide-details">
+                                <h3>Kanto</h3>
+                                <h5>Games you can find in kanto</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illum neque ipsa
+                                    cupiditate voluptas libero officiis? Error tenetur enim recusandae eos facere,
+                                    deleniti,
+                                    ipsa nemo amet magnam, voluptatibus hic velit.
+                                    Nisi quo voluptatem voluptate repellendus tenetur, quas architecto impedit pariatur
+                                    provident inventore deleniti, ducimus, sequi maxime? Voluptatem alias fuga explicabo
+                                    voluptate nostrum porro magni similique consectetur obcaecati culpa? Ullam,
+                                    molestiae!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="${region.image}" alt="${region.name} image 1" class="region-image"
+                                value=${region.id}>
+                            <div class="swiper-slide-details">
+                                <h3>Kanto</h3>
+                                <h5>Games you can find in kanto</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illum neque ipsa
+                                    cupiditate voluptas libero officiis? Error tenetur enim recusandae eos facere,
+                                    deleniti,
+                                    ipsa nemo amet magnam, voluptatibus hic velit.
+                                    Nisi quo voluptatem voluptate repellendus tenetur, quas architecto impedit pariatur
+                                    provident inventore deleniti, ducimus, sequi maxime? Voluptatem alias fuga explicabo
+                                    voluptate nostrum porro magni similique consectetur obcaecati culpa? Ullam,
+                                    molestiae!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="${region.image}" alt="${region.name} image 1" class="region-image"
+                                value=${region.id}>
+                            <div class="swiper-slide-details">
+                                <h3>Kanto</h3>
+                                <h5>Games you can find in kanto</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illum neque ipsa
+                                    cupiditate voluptas libero officiis? Error tenetur enim recusandae eos facere,
+                                    deleniti,
+                                    ipsa nemo amet magnam, voluptatibus hic velit.
+                                    Nisi quo voluptatem voluptate repellendus tenetur, quas architecto impedit pariatur
+                                    provident inventore deleniti, ducimus, sequi maxime? Voluptatem alias fuga explicabo
+                                    voluptate nostrum porro magni similique consectetur obcaecati culpa? Ullam,
+                                    molestiae!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="${region.image}" alt="${region.name} image 1" class="region-image"
+                                value=${region.id}>
+                            <div class="swiper-slide-details">
+                                <h3>Kanto</h3>
+                                <h5>Games you can find in kanto</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illum neque ipsa
+                                    cupiditate voluptas libero officiis? Error tenetur enim recusandae eos facere,
+                                    deleniti,
+                                    ipsa nemo amet magnam, voluptatibus hic velit.
+                                    Nisi quo voluptatem voluptate repellendus tenetur, quas architecto impedit pariatur
+                                    provident inventore deleniti, ducimus, sequi maxime? Voluptatem alias fuga explicabo
+                                    voluptate nostrum porro magni similique consectetur obcaecati culpa? Ullam,
+                                    molestiae!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="${region.image}" alt="${region.name} image 1" class="region-image"
+                                value=${region.id}>
+                            <div class="swiper-slide-details">
+                                <h3>Kanto</h3>
+                                <h5>Games you can find in kanto</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illum neque ipsa
+                                    cupiditate voluptas libero officiis? Error tenetur enim recusandae eos facere,
+                                    deleniti,
+                                    ipsa nemo amet magnam, voluptatibus hic velit.
+                                    Nisi quo voluptatem voluptate repellendus tenetur, quas architecto impedit pariatur
+                                    provident inventore deleniti, ducimus, sequi maxime? Voluptatem alias fuga explicabo
+                                    voluptate nostrum porro magni similique consectetur obcaecati culpa? Ullam,
+                                    molestiae!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 
@@ -66,6 +308,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"
         integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="./script.js"></script>
 </body>
