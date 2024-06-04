@@ -23,8 +23,13 @@ nav {
 
         li {
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             gap: 100px;
+
+            .right-nav {
+                display: flex;
+                gap: 50px;
+            }
 
             a {
                 text-decoration: none;
@@ -189,6 +194,7 @@ nav {
 .card-container-flipper {
     perspective: 1000px;
     position: relative;
+    
     
 
 }

@@ -20,9 +20,14 @@
     <nav id="navbar">
         <ul>
             <li>
-                <a href="#home">Home</a>
-                <a href="#pokedex">Pokedex</a>
-                <a href="#region">Regions</a>
+                <a href="#filters">Back To Filters</a>
+                <div class="right-nav">
+                    <a href="#home">Home</a>
+                    <a href="#pokedex">Pokedex</a>
+                    <a href="#region">Regions</a>
+                </div>
+                
+
             </li>
         </ul>
 
@@ -41,7 +46,7 @@
             </div>
         </div>
         <div class="section section-pokedex" id="pokedex">
-            <div class="slide slide-filters">
+            <div class="slide slide-filters" id="filters">
                 <h2>Filters</h2>
                 <div class="slide-filters-top-button-container">
                     <button class="reset-filter-btn">Reset Filters</button>
@@ -84,6 +89,7 @@
                         <option value="Generation 9">Generation 9</option>
                     </select>
                 </div>
+                <button id="applyFiltersBtn">Apply Filters</button>
             </div>
             <div class="slide slide-results" id="results">
                 <button>back</button>
@@ -114,186 +120,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="${region.image}" alt="${region.name} image 1" class="region-image"
-                                value=${region.id}>
-                            <div class="swiper-slide-details">
-                                <h3>Kanto</h3>
-                                <h5>Games you can find in kanto</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illum neque ipsa
-                                    cupiditate voluptas libero officiis? Error tenetur enim recusandae eos facere,
-                                    deleniti,
-                                    ipsa nemo amet magnam, voluptatibus hic velit.
-                                    Nisi quo voluptatem voluptate repellendus tenetur, quas architecto impedit pariatur
-                                    provident inventore deleniti, ducimus, sequi maxime? Voluptatem alias fuga explicabo
-                                    voluptate nostrum porro magni similique consectetur obcaecati culpa? Ullam,
-                                    molestiae!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="${region.image}" alt="${region.name} image 1" class="region-image"
-                                value=${region.id}>
-                            <div class="swiper-slide-details">
-                                <h3>Kanto</h3>
-                                <h5>Games you can find in kanto</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illum neque ipsa
-                                    cupiditate voluptas libero officiis? Error tenetur enim recusandae eos facere,
-                                    deleniti,
-                                    ipsa nemo amet magnam, voluptatibus hic velit.
-                                    Nisi quo voluptatem voluptate repellendus tenetur, quas architecto impedit pariatur
-                                    provident inventore deleniti, ducimus, sequi maxime? Voluptatem alias fuga explicabo
-                                    voluptate nostrum porro magni similique consectetur obcaecati culpa? Ullam,
-                                    molestiae!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="${region.image}" alt="${region.name} image 1" class="region-image"
-                                value=${region.id}>
-                            <div class="swiper-slide-details">
-                                <h3>Kanto</h3>
-                                <h5>Games you can find in kanto</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illum neque ipsa
-                                    cupiditate voluptas libero officiis? Error tenetur enim recusandae eos facere,
-                                    deleniti,
-                                    ipsa nemo amet magnam, voluptatibus hic velit.
-                                    Nisi quo voluptatem voluptate repellendus tenetur, quas architecto impedit pariatur
-                                    provident inventore deleniti, ducimus, sequi maxime? Voluptatem alias fuga explicabo
-                                    voluptate nostrum porro magni similique consectetur obcaecati culpa? Ullam,
-                                    molestiae!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="${region.image}" alt="${region.name} image 1" class="region-image"
-                                value=${region.id}>
-                            <div class="swiper-slide-details">
-                                <h3>Kanto</h3>
-                                <h5>Games you can find in kanto</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illum neque ipsa
-                                    cupiditate voluptas libero officiis? Error tenetur enim recusandae eos facere,
-                                    deleniti,
-                                    ipsa nemo amet magnam, voluptatibus hic velit.
-                                    Nisi quo voluptatem voluptate repellendus tenetur, quas architecto impedit pariatur
-                                    provident inventore deleniti, ducimus, sequi maxime? Voluptatem alias fuga explicabo
-                                    voluptate nostrum porro magni similique consectetur obcaecati culpa? Ullam,
-                                    molestiae!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="${region.image}" alt="${region.name} image 1" class="region-image"
-                                value=${region.id}>
-                            <div class="swiper-slide-details">
-                                <h3>Kanto</h3>
-                                <h5>Games you can find in kanto</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illum neque ipsa
-                                    cupiditate voluptas libero officiis? Error tenetur enim recusandae eos facere,
-                                    deleniti,
-                                    ipsa nemo amet magnam, voluptatibus hic velit.
-                                    Nisi quo voluptatem voluptate repellendus tenetur, quas architecto impedit pariatur
-                                    provident inventore deleniti, ducimus, sequi maxime? Voluptatem alias fuga explicabo
-                                    voluptate nostrum porro magni similique consectetur obcaecati culpa? Ullam,
-                                    molestiae!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="${region.image}" alt="${region.name} image 1" class="region-image"
-                                value=${region.id}>
-                            <div class="swiper-slide-details">
-                                <h3>Kanto</h3>
-                                <h5>Games you can find in kanto</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illum neque ipsa
-                                    cupiditate voluptas libero officiis? Error tenetur enim recusandae eos facere,
-                                    deleniti,
-                                    ipsa nemo amet magnam, voluptatibus hic velit.
-                                    Nisi quo voluptatem voluptate repellendus tenetur, quas architecto impedit pariatur
-                                    provident inventore deleniti, ducimus, sequi maxime? Voluptatem alias fuga explicabo
-                                    voluptate nostrum porro magni similique consectetur obcaecati culpa? Ullam,
-                                    molestiae!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="${region.image}" alt="${region.name} image 1" class="region-image"
-                                value=${region.id}>
-                            <div class="swiper-slide-details">
-                                <h3>Kanto</h3>
-                                <h5>Games you can find in kanto</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illum neque ipsa
-                                    cupiditate voluptas libero officiis? Error tenetur enim recusandae eos facere,
-                                    deleniti,
-                                    ipsa nemo amet magnam, voluptatibus hic velit.
-                                    Nisi quo voluptatem voluptate repellendus tenetur, quas architecto impedit pariatur
-                                    provident inventore deleniti, ducimus, sequi maxime? Voluptatem alias fuga explicabo
-                                    voluptate nostrum porro magni similique consectetur obcaecati culpa? Ullam,
-                                    molestiae!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="${region.image}" alt="${region.name} image 1" class="region-image"
-                                value=${region.id}>
-                            <div class="swiper-slide-details">
-                                <h3>Kanto</h3>
-                                <h5>Games you can find in kanto</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illum neque ipsa
-                                    cupiditate voluptas libero officiis? Error tenetur enim recusandae eos facere,
-                                    deleniti,
-                                    ipsa nemo amet magnam, voluptatibus hic velit.
-                                    Nisi quo voluptatem voluptate repellendus tenetur, quas architecto impedit pariatur
-                                    provident inventore deleniti, ducimus, sequi maxime? Voluptatem alias fuga explicabo
-                                    voluptate nostrum porro magni similique consectetur obcaecati culpa? Ullam,
-                                    molestiae!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="${region.image}" alt="${region.name} image 1" class="region-image"
-                                value=${region.id}>
-                            <div class="swiper-slide-details">
-                                <h3>Kanto</h3>
-                                <h5>Games you can find in kanto</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illum neque ipsa
-                                    cupiditate voluptas libero officiis? Error tenetur enim recusandae eos facere,
-                                    deleniti,
-                                    ipsa nemo amet magnam, voluptatibus hic velit.
-                                    Nisi quo voluptatem voluptate repellendus tenetur, quas architecto impedit pariatur
-                                    provident inventore deleniti, ducimus, sequi maxime? Voluptatem alias fuga explicabo
-                                    voluptate nostrum porro magni similique consectetur obcaecati culpa? Ullam,
-                                    molestiae!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="swiper-pagination"></div>
                 </div>
             </div>

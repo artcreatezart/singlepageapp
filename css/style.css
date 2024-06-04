@@ -22,8 +22,12 @@ nav ul {
 }
 nav ul li {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 100px;
+}
+nav ul li .right-nav {
+  display: flex;
+  gap: 50px;
 }
 nav ul li a {
   text-decoration: none;
