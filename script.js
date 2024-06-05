@@ -22,7 +22,8 @@ $(document).ready(function () {
             number: "#0001",
             name: "Bulbasaur",
             pronunciation: "BUL-ba-sore",
-            type: [`./img/type/grass.webp`, `./img/type/poison.webp`],
+            type: "Grass",
+            typeImg: ["./img/type/grass.webp","./img/type/poison.webp"],
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/bulbasaur.webp",
@@ -37,7 +38,8 @@ $(document).ready(function () {
             number: "#0002",
             name: "Ivysaur",
             pronunciation: "EYE-vee-sore",
-            type: ["./img/type/grass.webp", "/img/type/poison.webp"],
+            type: "Grass",
+            typeImg: ["./img/type/grass.webp", "/img/type/poison.webp"],
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/bulbasaur.webp",
@@ -52,7 +54,8 @@ $(document).ready(function () {
             number: "#0003",
             name: "Venusaur",
             pronunciation: "VEE-nuh-sore",
-            type: ["./img/type/grass.webp", "/img/type/poison.webp"],
+            type: "Grass",
+            typeImg: ["./img/type/grass.webp", "/img/type/poison.webp"],
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/bulbasaur.webp",
@@ -68,7 +71,8 @@ $(document).ready(function () {
             number: "#0004",
             name: "Charmander",
             pronunciation: "CHAR-man-der",
-            type: "./img/type/fire.webp",
+            type: "Fire",
+            typeImg: "./img/type/fire.webp",
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/charmander.webp",
@@ -84,7 +88,8 @@ $(document).ready(function () {
             number: "#0005",
             name: "Charmeleon",
             pronunciation: "char-MEE-lee-un",
-            type: "./img/type/fire.webp",
+            type: "Fire",
+            typeImg: "./img/type/fire.webp",
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/charmander.webp",
@@ -100,7 +105,8 @@ $(document).ready(function () {
             number: "#0006",
             name: "Charizard",
             pronunciation: "CHAR-iz-ard",
-            type: ["./img/type/fire.webp", "./img/type/flying.webp"],
+            type: "Fire",
+            typeImg: ["./img/type/fire.webp", "./img/type/flying.webp"],
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/charmander.webp",
@@ -116,7 +122,8 @@ $(document).ready(function () {
             number: "#0007",
             name: "Squirtle",
             pronunciation: "SKWIR-tul",
-            type: "./img/type/water.webp",
+            type: "Water",
+            typeImg: "./img/type/water.webp",
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/squirtle.webp",
@@ -132,7 +139,8 @@ $(document).ready(function () {
             number: "#0008",
             name: "Wartortle",
             pronunciation: "WOR-TORE-tul",
-            type: "./img/type/water.webp",
+            type: "Water",
+            typeImg: "./img/type/water.webp",
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/squirtle.webp",
@@ -148,7 +156,8 @@ $(document).ready(function () {
             number: "#0009",
             name: "Blastoise",
             pronunciation: "BLAS-toyce",
-            type: "./img/type/water.webp",
+            type: "Water",
+            typeImg: "./img/type/water.webp",
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/squirtle.webp",
@@ -164,7 +173,8 @@ $(document).ready(function () {
             number: "#0010",
             name: "Caterpie",
             pronunciation: "CAT-ur-pee",
-            type: "./img/type/bug.webp",
+            type: "Bug",
+            typeImg: "./img/type/bug.webp",
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/caterpie.webp",
@@ -180,7 +190,8 @@ $(document).ready(function () {
             number: "#0011",
             name: "Metapod",
             pronunciation: "MET-uh-pod",
-            type: "./img/type/bug.webp",
+            type: "Bug",
+            typeImg: "./img/type/bug.webp",
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/caterpie.webp",
@@ -196,7 +207,8 @@ $(document).ready(function () {
             number: "#0012",
             name: "Butterfree",
             pronunciation: "BUT-er-free",
-            type: "./img/type/bug.webp",
+            type: "Bug",
+            typeImg: "./img/type/bug.webp",
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/caterpie.webp",
@@ -212,7 +224,7 @@ $(document).ready(function () {
             number: "#0013",
             name: "Weedle",
             pronunciation: "WEE-dull",
-            type: ["./img/type/bug.webp", "./img/type/poison.webp"],
+            typeImg: ["./img/type/bug.webp", "./img/type/poison.webp"],
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/weedle.webp",
@@ -228,7 +240,8 @@ $(document).ready(function () {
             number: "#0014",
             name: "Kakuna",
             pronunciation: "kah-KOO-na",
-            type: ["./img/type/bug.webp", "./img/type/poison.webp"],
+            type: "Bug",
+            typeImg: ["./img/type/bug.webp", "./img/type/poison.webp"],
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/weedle.webp",
@@ -244,7 +257,8 @@ $(document).ready(function () {
             number: "#0015",
             name: "Beedrill",
             pronunciation: "BEE-dril",
-            type: ["./img/type/bug.webp", "./img/type/poison.webp"],
+            type: "Bug",
+            typeImg: ["./img/type/bug.webp", "./img/type/poison.webp"],
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/weedle.webp",
@@ -260,7 +274,8 @@ $(document).ready(function () {
             number: "#0016",
             name: "Pidgey",
             pronunciation: "PIDG-ee",
-            type: ["./img/type/normal.webp", "./img/type/flying.webp"],
+            type: "Normal",
+            typeImg: ["./img/type/normal.webp", "./img/type/flying.webp"],
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/pidgey.webp",
@@ -276,7 +291,8 @@ $(document).ready(function () {
             number: "#0017",
             name: "Pidgeot",
             pronunciation: "PIDG-ee-OH-toe",
-            type: ["./img/type/normal.webp", "./img/type/flying.webp"],
+            type: "Normal",
+            typeImg: ["./img/type/normal.webp", "./img/type/flying.webp"],
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/pidgey.webp",
@@ -292,7 +308,8 @@ $(document).ready(function () {
             number: "#0018",
             name: "Pidgeotto",
             pronunciation: "PIDG-ee-ott",
-            type: ["./img/type/normal.webp", "./img/type/flying.webp"],
+            type: "Normal",
+            typeImg: ["./img/type/normal.webp", "./img/type/flying.webp"],
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/pidgey.webp",
@@ -308,13 +325,15 @@ $(document).ready(function () {
             number: "#0019",
             name: "Rattata",
             pronunciation: "RA-TAT-ta",
-            type: ["./img/type/normal.webp", "./img/type/dark.webp"],
+            type: "Normal",
+            typeImg: ["./img/type/normal.webp", "./img/type/dark.webp"],
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/rattata.webp",
             secondEvolution: "./img/pokemon/raticate.webp",
             weakAgainst: ["./img/type/rock.webp", "./img/type/fire.webp", "./img/type/flying.webp"],
         },
+
         {
             id: 20,
             imageLink: "https://pokemondb.net/pokedex/raticate",
@@ -323,7 +342,8 @@ $(document).ready(function () {
             number: "#0019",
             name: "raticate",
             pronunciation: "RAT-ih-kate",
-            type: ["./img/type/normal.webp", "./img/type/dark.webp"],
+            type: "Normal",
+            typeImg: ["./img/type/normal.webp", "./img/type/dark.webp"],
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/rattata.webp",
@@ -345,6 +365,7 @@ $(document).ready(function () {
         for (let i = 0; i < array.length; i++) {
             const pokemon = array[i]; // Get current Pokémon object
             // Populate card
+            
             results.innerHTML += `
         <div class="card-container-flipper">
         <div class="pokemon-card">
@@ -353,7 +374,8 @@ $(document).ready(function () {
                 <div class="card-details">
                     <h3>${pokemon.number}</h3>
                     <h4>${pokemon.name}</h4>
-                    <img src="${pokemon.type}" alt="">
+                    <h5>${pokemon.type}</h5>
+                    <img src="${pokemon.typeImg}" alt="">
                 </div>
             </div>
             <div class="back-card">
@@ -397,7 +419,6 @@ $(document).ready(function () {
     $('#goToResults').click(function () {
         fullpage_api.moveTo(2, 1);
     });
-
     
     $("#type").change(function () {
         console.dir($("#type").val());
@@ -407,7 +428,7 @@ $(document).ready(function () {
     $("#generation").change(function () {
         console.dir($("generation").val());
         filterAndPopulateResults();
-    })
+    });
 
     function filterPokemon() {
         const filteredPokemon = pokemon.filter(pokemon => {
@@ -429,7 +450,5 @@ $(document).ready(function () {
     }
 
     filterAndPopulateResults();
-
-
     
 })
