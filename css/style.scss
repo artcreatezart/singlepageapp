@@ -23,7 +23,7 @@ nav {
 
         li {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             gap: 100px;
 
             .right-nav {
@@ -138,6 +138,7 @@ nav {
 
 }
 
+
 .section-pokedex {
     width: 100%;
     height: 100%;
@@ -202,10 +203,31 @@ nav {
     overflow-y: scroll !important;
 }
 
+#backToFiltersButton {
+    margin-top: 100px;
+    background-color: rgb(3, 3, 191);
+    padding: 10px;
+    font-size: 0.3em;
+    box-shadow: -15px 13px 0px 0px rgba(40, 84, 190, 1);
+    -webkit-box-shadow: -15px 13px 0px 0px rgba(40, 84, 190, 1);
+    -moz-box-shadow: -15px 13px 0px 0px rgba(40, 84, 190, 1);
+    border: 6px #100A77 solid;
+    color: white;
+    transition: ease 0.1s;
+    font-family: "Press Start 2P", system-ui;
+}
+
+#backToFiltersButton:hover {
+    background-color: #100A77;
+    transition: ease 0.1s;
+    color: #FFFF00;
+}
+
+
 #results {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
-    grid-gap: 30px; 
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
     justify-content: center;
     margin-top: 50px;
 }
@@ -242,19 +264,23 @@ nav {
     align-items: center;
     padding: 10px;
     color: #000;
-    h3  {
+
+    h3 {
         font-size: 0.4em;
-        margin-top: 10px;
+        margin-top: 10px ;
         font-family: "DotGothic16", sans-serif;
         letter-spacing: 2px;
         text-align: center;
     }
+
     h4 {
         font-size: 0.6em;
         font-family: "DotGothic16", sans-serif;
         letter-spacing: 2px;
         text-align: center;
+        margin: 10px 0 20px 0;
     }
+
     h5 {
         font-size: 0.3em;
         font-family: "DotGothic16", sans-serif;
@@ -262,13 +288,25 @@ nav {
         text-align: center;
         margin: 0;
     }
-    
+
 
     img {
         width: 50%;
         height: 40%;
     }
+
+    .card-details {
+        height: 50%;
+
+
+        img {
+            width: 45%;
+            height: 40%;
+
+        }
+    }
 }
+
 
 .front-card {
     z-index: 2;
@@ -277,6 +315,7 @@ nav {
 
 .back-card {
     transform: rotateY(180deg);
+
     h4 {
         font-size: 0.5em;
     }
@@ -287,13 +326,15 @@ nav {
 }
 
 .evolution-line {
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     img {
         width: 30%;
     }
+
     i {
         font-size: 0.5em;
     }

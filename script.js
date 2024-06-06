@@ -11,7 +11,7 @@ $(document).ready(function () {
         controlArrows: false,
     });
 
-    fullpage_api.setAllowScrolling(false);
+    fullpage_api.setAllowScrolling(true);
     // prevent scroll of sections and slides
 
     const pokemon = [{
@@ -22,8 +22,8 @@ $(document).ready(function () {
             number: "#0001",
             name: "Bulbasaur",
             pronunciation: "BUL-ba-sore",
-            type: "Grass",
-            typeImg: ["./img/type/grass.webp","./img/type/poison.webp"],
+            type: ["Grass", ""],
+            typeImg: ["./img/type/grass.webp", "./img/type/poison.webp"],
             region: "Kanto",
             generation: "1",
             firstEvolution: "./img/pokemon/bulbasaur.webp",
@@ -280,7 +280,7 @@ $(document).ready(function () {
             generation: "1",
             firstEvolution: "./img/pokemon/pidgey.webp",
             secondEvolution: "./img/pokemon/pidgeot.webp",
-            thirdEvolution: "./img/pokemon/pidegotto.webp",
+            thirdEvolution: "./img/pokemon/pidgeotto.webp",
             weakAgainst: ["./img/type/rock.webp", "./img/type/fire.webp", "./img/type/flying.webp"],
         },
         {
@@ -297,7 +297,7 @@ $(document).ready(function () {
             generation: "1",
             firstEvolution: "./img/pokemon/pidgey.webp",
             secondEvolution: "./img/pokemon/pidgeot.webp",
-            thirdEvolution: "./img/pokemon/pidegotto.webp",
+            thirdEvolution: "./img/pokemon/pidgeotto.webp",
             weakAgainst: ["./img/type/rock.webp", "./img/type/fire.webp", "./img/type/flying.webp"],
         },
         {
@@ -314,7 +314,7 @@ $(document).ready(function () {
             generation: "1",
             firstEvolution: "./img/pokemon/pidgey.webp",
             secondEvolution: "./img/pokemon/pidgeot.webp",
-            thirdEvolution: "./img/pokemon/pidegotto.webp",
+            thirdEvolution: "./img/pokemon/pidgeotto.webp",
             weakAgainst: ["./img/type/rock.webp", "./img/type/fire.webp", "./img/type/flying.webp"],
         },
         {
@@ -361,11 +361,13 @@ $(document).ready(function () {
         const results = document.getElementById('results');
         results.innerHTML = '';
 
+
+
         // Loop over the Pokémon and create a card for each one
         for (let i = 0; i < array.length; i++) {
             const pokemon = array[i]; // Get current Pokémon object
             // Populate card
-            
+
             results.innerHTML += `
         <div class="card-container-flipper">
         <div class="pokemon-card">
@@ -374,8 +376,8 @@ $(document).ready(function () {
                 <div class="card-details">
                     <h3>${pokemon.number}</h3>
                     <h4>${pokemon.name}</h4>
-                    <h5>${pokemon.type}</h5>
-                    <img src="${pokemon.typeImg}" alt="">
+                    <img src="${Array.isArray(pokemon.typeImg) ? pokemon.typeImg[0] : pokemon.typeImg}" alt="">
+                ${Array.isArray(pokemon.typeImg) && pokemon.typeImg[1] ? `<img src="${pokemon.typeImg[1]}" alt="">` : ''}
                 </div>
             </div>
             <div class="back-card">
@@ -385,7 +387,8 @@ $(document).ready(function () {
                     <h5>Generation ${pokemon.generation}</h5>
                     <div class="weak-types">
                     <h5>Weakness</h5>
-                    <img src="${pokemon.weakAgainst}" alt="">
+                    <img src="${Array.isArray(pokemon.weakAgainst) ? pokemon.weakAgainst[0] : pokemon.weakAgainst}" alt="">
+                ${Array.isArray(pokemon.weakAgainst) && pokemon.weakAgainst[1] ? `<img src="${pokemon.weakAgainst[1]}" alt="">` : ''}
                     </div>
                     
                     <div class="evolution-line">
@@ -419,7 +422,10 @@ $(document).ready(function () {
     $('#goToResults').click(function () {
         fullpage_api.moveTo(2, 1);
     });
-    
+    $('#backToFiltersButton').click(function () {
+        fullpage_api.moveTo(2, 0);
+    });
+
     $("#type").change(function () {
         console.dir($("#type").val());
         filterAndPopulateResults();
@@ -437,7 +443,7 @@ $(document).ready(function () {
             if (filterTypeValue && !pokemonType.includes(filterTypeValue)) {
                 return false
             }
-            
+
             return true;
         });
 
@@ -450,5 +456,5 @@ $(document).ready(function () {
     }
 
     filterAndPopulateResults();
-    
+
 })
