@@ -44,13 +44,13 @@
             <div class="slide slide-filters" id="filters">
                 <h2>Filters</h2>
                 <div class="slide-filters-top-button-container">
-                    <button class="reset-filter-btn">Reset Filters</button>
+                    <button class="remove-filters-btn" id="removeFiltersBtn">Remove Filters</button>
                     <button class="see-all-pokedex-btn" id="goToResults">See All</button>
                 </div>
                 <div class="type-filter-btn">
                     <label for="type">Pokemon Type</label>
                     <select name="type" id="type">
-                        <option value="All">All</option>
+                        <option value="">All</option>
                         <option value="Normal">Normal</option>
                         <option value="Fire">Fire</option>
                         <option value="Water">Water</option>
@@ -74,22 +74,24 @@
                 <div class="generation-filter-btn">
                     <label for="generation">Pokemon Generation</label>
                     <select name="generation" id="generation">
-                        <option value="All">All</option>
-                        <option value="Generation 1">Generation 1</option>
-                        <option value="Generation 2">Generation 2</option>
-                        <option value="Generation 3">Generation 3</option>
-                        <option value="Generation 4">Generation 4</option>
-                        <option value="Generation 5">Generation 5</option>
-                        <option value="Generation 6">Generation 6</option>
-                        <option value="Generation 7">Generation 7</option>
-                        <option value="Generation 8">Generation 8</option>
-                        <option value="Generation 9">Generation 9</option>
+                        <option value="">All</option>
+                        <option value="1">Generation 1</option>
+                        <option value="2">Generation 2</option>
+                        <option value="3">Generation 3</option>
+                        <option value="4">Generation 4</option>
+                        <option value="5">Generation 5</option>
+                        <option value="6">Generation 6</option>
+                        <option value="7">Generation 7</option>
+                        <option value="8">Generation 8</option>
+                        <option value="9">Generation 9</option>
                     </select>
                 </div>
                 <button id="applyFiltersBtn">Apply Filters</button>
+                
             </div>
             <div class="slide slide-results">
                 <button id="backToFiltersButton">Back To Filters</button>
+                <button class="remove-filters-btn" id="removeFiltersBtn">Remove Filters</button>
                 <div id="results"></div>
             </div>
         </div>
