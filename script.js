@@ -12,7 +12,7 @@ $(document).ready(function () {
     });
 
     fullpage_api.setAllowScrolling(true);
-    // prevent scroll of sections and slides
+
 
     const pokemon = [{
             id: 1,
@@ -356,70 +356,63 @@ $(document).ready(function () {
 
     ];
 
-    // Populate cards - no sorting just populating
     function populateCards(array) {
-        // Clear out any results first:
-        const results = document.getElementById('results');
-        results.innerHTML = '';
+        $("#results").html = '';
 
 
 
-        // Loop over the Pokémon and create a card for each one
         for (let i = 0; i < array.length; i++) {
-            const pokemon = array[i]; // Get current Pokémon object
-            // Populate card
-
-            results.innerHTML += `
-        <div class="card-container-flipper">
-        <div class="pokemon-card">
-            <div class="front-card">
-                <img src="${pokemon.imageFront}" alt="Front Image">
-                <div class="card-details">
-                    <h3>${pokemon.number}</h3>
-                    <h4>${pokemon.name}</h4>
-                    <img src="${Array.isArray(pokemon.typeImg) ? pokemon.typeImg[0] : pokemon.typeImg}" alt="">
-                ${Array.isArray(pokemon.typeImg) && pokemon.typeImg[1] ? `<img src="${pokemon.typeImg[1]}" alt="">` : ''}
+            const pokemon = array[i]; 
+            $("#results").html += `
+                <div class="card-container-flipper">
+                <div class="pokemon-card">
+                    <div class="front-card">
+                        <img src="${pokemon.imageFront}" alt="Front Image">
+                        <div class="card-details">
+                            <h3>${pokemon.number}</h3>
+                            <h4>${pokemon.name}</h4>
+                            <img src="${Array.isArray(pokemon.typeImg) ? pokemon.typeImg[0] : pokemon.typeImg}" alt="">
+                        ${Array.isArray(pokemon.typeImg) && pokemon.typeImg[1] ? `<img src="${pokemon.typeImg[1]}" alt="">` : ''}
+                        </div>
+                    </div>
+                    <div class="back-card">
+                        <img src="${pokemon.imageBack}" alt="back Image">
+                        <div class="card-details">
+                            <h4>${pokemon.pronunciation}</h4>
+                            <h5>Generation ${pokemon.generation}</h5>
+                            <div class="weak-types">
+                            <h5>Weakness</h5>
+                            <img src="${Array.isArray(pokemon.weakAgainst) ? pokemon.weakAgainst[0] : pokemon.weakAgainst}" alt="">
+                        ${Array.isArray(pokemon.weakAgainst) && pokemon.weakAgainst[1] ? `<img src="${pokemon.weakAgainst[1]}" alt="">` : ''}
+                            </div>
+                            
+                            <div class="evolution-line">
+                            
+                                <img src="${pokemon.firstEvolution}" alt="First Evolution">
+                                <i class="fa-solid fa-caret-right"></i>
+                                <img src="${pokemon.secondEvolution}" alt="Second Evolution">
+                                <i class="fa-solid fa-caret-right"></i>
+                                <img src="${pokemon.thirdEvolution}" alt="Final Evolution">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="back-card">
-                <img src="${pokemon.imageBack}" alt="back Image">
-                <div class="card-details">
-                    <h4>${pokemon.pronunciation}</h4>
-                    <h5>Generation ${pokemon.generation}</h5>
-                    <div class="weak-types">
-                    <h5>Weakness</h5>
-                    <img src="${Array.isArray(pokemon.weakAgainst) ? pokemon.weakAgainst[0] : pokemon.weakAgainst}" alt="">
-                ${Array.isArray(pokemon.weakAgainst) && pokemon.weakAgainst[1] ? `<img src="${pokemon.weakAgainst[1]}" alt="">` : ''}
-                    </div>
-                    
-                    <div class="evolution-line">
-                    
-                        <img src="${pokemon.firstEvolution}" alt="First Evolution">
-                        <i class="fa-solid fa-caret-right"></i>
-                        <img src="${pokemon.secondEvolution}" alt="Second Evolution">
-                        <i class="fa-solid fa-caret-right"></i>
-                        <img src="${pokemon.thirdEvolution}" alt="Final Evolution">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        `;
+                `;
+            
         }
     }
 
     populateCards(pokemon);
 
-    // Function to move to the specified section
     function moveToSection(number) {
-        fullpage_api.moveTo(number); // Allows you to move sections or "jump"
+        fullpage_api.moveTo(number); 
     }
 
     $('#goToPokedexFilters').click(function () {
         moveToSection(2);
     });
 
-    // Move to slide # - first number is section, second is slide - zero indexed for slides
     $('#applyFiltersBtn').click(function () {
         fullpage_api.moveTo(2, 1);
     });
@@ -458,11 +451,9 @@ $(document).ready(function () {
     };
 
     $('#removeFiltersBtn').click(function () {
-        // Reset the filter values
-        $("#type").val(''); // Assuming type filter is a select element
-        $("#generation").val(''); // Assuming generation filter is a select element
+        $("#type").val(''); 
+        $("#generation").val(''); 
         
-        // Repopulate results with all Pokémon
         filterAndPopulateResults();
     });
     
@@ -473,5 +464,86 @@ $(document).ready(function () {
     };
 
     filterAndPopulateResults();
+
+    function filterRegions() {
+        const filteredRegions = region.filter(region => {
+
+        });
+
+        return filteredRegions;
+    };
+
+
+    const region = [
+        {
+            image1: "",
+            image2: "",
+            image3: "",
+            name: "Kanto",
+            games: "Pokémon Red, Pokémon Blue, Pokémon Green - FireRed, LeafGreen - Let's Go Pikachu!, Let's Go Evvee!",
+            about: "Kanto is home to the Indigo League, the region's official Pokémon League, comprised of eight Gyms and the Elite Four — a title given to trainers considered the best in their region. Trainers who earned all eight Gym Badges can compete in the Indigo League."
+        },
+        {
+            image1: "",
+            image2: "",
+            image3: "",
+            name: "Kanto",
+            games: "Pokémon Red, Pokémon Blue, Pokémon Green - FireRed, LeafGreen - Let's Go Pikachu!, Let's Go Evvee!",
+            about: "Kanto is home to the Indigo League, the region's official Pokémon League, comprised of eight Gyms and the Elite Four — a title given to trainers considered the best in their region. Trainers who earned all eight Gym Badges can compete in the Indigo League."
+        },
+    ]
+
+    function filterAndPopulateRegions() {
+        const filteredRegions = filterRegions;
+        populateRegions(filteredRegions);
+    }
+
+    filterAndPopulateRegions();
+    
+    function populateRegions(filteredRegions) {
+        $("#pokemonRegions").html('');
+
+        if (filteredRegions.length === 0) {
+        } else {
+            filteredRegions.forEach(region => {
+                const regionsHtml = `
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class "region-img-grid">
+                                <img src="${region.image1}" alt="${region.name} image 1" class="region-image"
+                                value=${region.id}>
+                                <img src="${region.image2}" alt="${region.name} image 1" class="region-image"
+                                value=${region.id}>
+                                <img src="${region.image3}" alt="${region.name} image 1" class="region-image"
+                                value=${region.id}>
+                            </div>
+                            <div class="swiper-slide-details">
+                                <h3>${region.name}</h3>
+                                <h5>${region.games}</h5>
+                                <p> ${region.about}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                $("#pokemonRegions").append(regionsHtml);
+
+                const swipers = document.querySelectorAll('.swiper');
+                swipers.forEach(swiperEl => {
+                    new Swiper(swiperEl, {
+                        direction: 'vertical',
+                        loop: true,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        }
+                    })
+                });
+            })
+        }
+    }
 
 });
