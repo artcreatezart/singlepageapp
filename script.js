@@ -472,6 +472,7 @@ $(document).ready(function () {
 
         return filteredRegions;
     };
+    
 
 
     const region = [
@@ -499,7 +500,7 @@ $(document).ready(function () {
     }
 
     filterAndPopulateRegions();
-    
+
     function populateRegions(filteredRegions) {
         $("#pokemonRegions").html('');
 
@@ -531,17 +532,18 @@ $(document).ready(function () {
                 `;
                 $("#pokemonRegions").append(regionsHtml);
 
-                const swipers = document.querySelectorAll('.swiper');
-                swipers.forEach(swiperEl => {
-                    new Swiper(swiperEl, {
+                $('.swiper').each(function() {
+                    new Swiper(this, {
                         direction: 'vertical',
                         loop: true,
                         pagination: {
                             el: '.swiper-pagination',
-                            clickable: true,
+                            clickable: true
                         }
-                    })
+                    });
                 });
+        
+    
             })
         }
     }
